@@ -1,0 +1,59 @@
+$purple-color: rgba(129, 0, 167, 0.77);
+$column-range: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
+$width: 8.33333333%;
+@each $number in $column-range {
+	.col-#{$number} {
+		width: $width * $number;
+	}
+}
+.purple-color {
+	background-color: $purple-color;
+	border-radius: 10px;
+	width: 84%;
+}
+.c-p {
+	cursor: pointer;
+}
+.index-title {
+	padding-left: $width;
+	margin-top: $width/2;
+	margin-bottom: $width/4;
+}
+.poster-container {
+	display: flex;
+	grid-column-gap: 16px;
+}
+.detail {
+	display: flex;
+	justify-content: space-evenly;
+	width: 80%;
+	margin: auto;
+	color: #737373;
+}
+.name {
+	text-align: center;
+	margin: 2% 0;
+}
+.year {
+	margin-left: -20%;
+}
+.status {
+	color: white;
+	border: 1px solid white;
+	padding: 4px 2px;
+	margin-top: -3px;
+	margin-right: -20%;
+	font-size: 13px;
+}
+.poster {
+	height: 84%;
+}
+.poster-infor {
+	margin-top: 0.5rem;
+}
+.bg-grey {
+	background-color: #222222;
+}
+.review-container {
+	color: rgb(176, 42, 218);
+}
