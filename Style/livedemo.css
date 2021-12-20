@@ -95,3 +95,21 @@ body {
 	transition: 0.2s;
 	box-shadow: 5px 5px 8px rgb(105, 105, 105);
 }
+.footer {
+	margin-top: 5%;
+	height: 100px;
+}
+@media screen and (max-width: 767px) {
+	.navbar .nav-container div {
+		font-size: 10px;
+	}
+	.header .slogan {
+		font-size: 30px;
+		width: 80%;
+	}
+	.header > img {
+		position: absolute;
+		width: 100%;
+		height: 50%;
+	}
+}

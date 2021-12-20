@@ -1,0 +1,143 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: arial, sans-serif;
+	color: white;
+}
+body {
+	background-color: black;
+}
+.glass {
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	opacity: 0.75;
+	background-color: black;
+}
+.container {
+	width: 80%;
+	height: 40%;
+	position: absolute;
+	top: 25%;
+	left: 10%;
+	display: grid;
+	grid-template-columns: 15% 80%;
+	grid-template-rows: auto auto auto auto;
+	grid-column-gap: 3%;
+	z-index: 10;
+}
+#background {
+	width: 80vw;
+	height: 100vh;
+	margin-left: 10vw;
+	z-index: -1;
+	position: absolute;
+}
+.container > div:first-child {
+	grid-row: 1/5;
+	position: relative;
+}
+.container > div:first-child img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.title {
+	color: white;
+	z-index: 10;
+	position: absolute;
+	font-size: 60px;
+	margin-top: 4%;
+	width: 100%;
+	text-align: center;
+}
+.name {
+	font-size: 2.5vw;
+	text-align: left !important;
+}
+.infor {
+	font-size: 1.8vw;
+	display: flex;
+	align-items: center;
+}
+.infor > div:not(:first-child) {
+	margin-left: 3%;
+}
+.reviews {
+	display: flex;
+	align-items: center;
+	margin-bottom: 3%;
+}
+.reviews .star {
+	font-size: 25px;
+	color: rgba(129, 0, 167, 1);
+	margin-right: 3%;
+}
+.reviews > div:nth-child(2) {
+	color: #737373;
+}
+.reviews .star i {
+	color: rgba(129, 0, 167, 1);
+}
+.react {
+	display: flex;
+}
+.react > div {
+	font-size: 35px;
+	margin-right: 5%;
+}
+.react i {
+	color: rgba(129, 0, 167, 1);
+}
+.comment-container {
+	top: 85%;
+	position: absolute;
+	width: 80%;
+	left: 10%;
+}
+.comment-container > h1 {
+	margin-bottom: 5%;
+	font-size: 30px;
+}
+.user-comment {
+	display: grid;
+	grid-template-columns: 100px auto;
+	grid-template-rows: 50% 50%;
+	grid-column-gap: 2%;
+}
+.avatar {
+	grid-row: 1/4;
+	background-color: white;
+	height: 100px;
+	border-radius: 50%;
+}
+.userName {
+	display: flex;
+	align-items: center;
+	font-size: 25px;
+	font-weight: bold;
+}
+.userName .star {
+	margin-left: 1%;
+	font-size: 20px;
+}
+.userName .star i {
+	color: rgba(129, 0, 167, 1);
+}
+.user-comment {
+	border: 1px solid rgb(73, 73, 73);
+	padding: 10px;
+	width: 101.5%;
+}
+.comment > div {
+	margin-bottom: 3%;
+}
+.blur-glass {
+	position: absolute;
+	width: 100%;
+	height: 10%;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(0, 0, 0));
+	margin-left: 10%;
+	top: 95%;
+}

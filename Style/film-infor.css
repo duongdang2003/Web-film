@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	color: white;
+	font-family: arial, sans-serif;
+}
+body {
+	background-color: black;
+}
+.container {
+	height: 100vh;
+	position: relative;
+}
+.big-poster {
+	position: absolute;
+	height: 100%;
+	width: 90%;
+	left: 5%;
+}
+.glass {
+	position: absolute;
+	height: 70%;
+	width: 100%;
+	background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+	top: 0;
+}
+.glass2 {
+	position: absolute;
+	height: 30%;
+	width: 100%;
+	top: 70%;
+	background-color: black;
+}
+.film-infor {
+	width: 80%;
+	height: 40%;
+	position: absolute;
+	top: 45%;
+	left: 10%;
+	display: grid;
+	grid-template-columns: 15% 80%;
+	grid-template-rows: 20% 20% 40% 20%;
+	grid-column-gap: 3%;
+}
+
+.film-infor div:first-child {
+	grid-row: 1/5;
+	position: relative;
+}
+.film-infor div:first-child img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.title {
+	font-size: 3vw;
+}
+.infor {
+	font-size: 1.8vw;
+	display: flex;
+	align-items: center;
+}
+.infor > div:not(:first-child) {
+	margin-left: 3%;
+}
+.discription {
+	font-size: 1.3vw;
+}
+.buttonGroup {
+	display: flex;
+	font-size: 2vw;
+	font-weight: bold;
+	align-items: center;
+}
+.buttonGroup div:hover {
+	background-color: rgba(129, 0, 167, 1);
+	cursor: pointer;
+}
+.buttonGroup div:not(:first-child) {
+	margin-left: 3%;
+}
+.buttonGroup div {
+	background-color: rgba(129, 0, 167, 0.77);
+	padding: 10px;
+	border-radius: 5px;
+}

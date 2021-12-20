@@ -46,6 +46,23 @@
   width: 100.0%;
 }
 
+a,
+a:active,
+a:link,
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.purple {
+  background-color: rgba(129, 0, 167, 0.77);
+}
+
 .purple-color {
   background-color: rgba(129, 0, 167, 0.77);
   border-radius: 10px;

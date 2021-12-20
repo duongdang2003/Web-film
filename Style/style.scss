@@ -6,6 +6,20 @@ $width: 8.33333333%;
 		width: $width * $number;
 	}
 }
+a,
+a:active,
+a:link,
+a:hover {
+	color: white;
+	text-decoration: none;
+}
+a:visited {
+	color: white;
+	text-decoration: none;
+}
+.purple {
+	background-color: $purple-color;
+}
 .purple-color {
 	background-color: $purple-color;
 	border-radius: 10px;
